@@ -14,8 +14,10 @@ public class EmployeesMain {
 		for (Employee e : employees) 
 			e.display();
 		
+		System.out.println("Calculate salary: ");
+		System.out.println(employees[1].salaryCalculation(4));
 		employees[1].setSalary(86000);
-		employees[3].setSalary(88000);
+		System.out.println(employees[1].salaryCalculation(4) + "\n");
 		
 		for (Employee e : employees) 
 			e.display();

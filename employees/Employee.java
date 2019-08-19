@@ -16,6 +16,10 @@ public abstract class Employee {
 	public abstract int getCostToCompany();
 	public abstract void display();
 	
+	public float salaryCalculation (int weeks) {
+		return this.salary / 52 * weeks;
+	}
+	
 	public String getName() {
 		return name;
 	}
